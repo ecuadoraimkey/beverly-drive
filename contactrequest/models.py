@@ -2,7 +2,7 @@ from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
 
 
-class Message(models.Model):
+class ContactRequest(models.Model):
 
     subject = models.CharField(max_length=70, null=False)
     sent_by = models.CharField(max_length=50, null=False)
